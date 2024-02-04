@@ -13,14 +13,6 @@
     />
     <title>Frontend Mentor | 3-column preview card component</title>
 
-    <!--fonts-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap"
-      rel="stylesheet"
-    />
-
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -34,9 +26,13 @@
     </style>
   </head>
 
-  <body>
-    <main>
-      <section>
+  <body
+    class="grid min-h-screen px-4 py-8 bg-very-light-gray place-items-center"
+  >
+    <main
+      class="xl:w-[1000px] grid grid-cols-[repeat(auto-fit,_minmax(330px,_1fr))] font-lexend-deca rounded-lg overflow-hidden"
+    >
+      <section class="p-10 xl:p-12 bg-bright-orange">
         <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
@@ -47,17 +43,26 @@
             />
           </g>
         </svg>
-        <h1>Sedans</h1>
-        <p>
+        <h1
+          class="my-4 text-very-light-gray font-bold text-[2.5rem] font-big-shoulder"
+        >
+          SEDANS
+        </h1>
+        <p
+          class="text-sm text-transparent-white font-normal leading-[2] tracking-widest"
+        >
           Choose a sedan for its affordability and excellent fuel economy. Ideal
           for cruising in the city or on your next road trip.
         </p>
-        <button type="button" class="first button-hoverable">
+        <button
+          type="button"
+          class="px-6 py-3 my-4 xl:mt-20 rounded-full hover:outline hover:outline-2 hover:outline-very-light-gray hover:[background:_none] hover:text-very-light-gray bg-very-light-gray text-bright-orange"
+        >
           <span> Learn More</span>
         </button>
       </section>
 
-      <section>
+      <section class="p-10 xl:p-12 bg-dark-cyan">
         <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
@@ -68,17 +73,26 @@
             />
           </g>
         </svg>
-        <h2>SUVs</h2>
-        <p>
+        <h2
+          class="my-4 text-very-light-gray font-bold text-[2.5rem] font-big-shoulder"
+        >
+          SUVs
+        </h2>
+        <p
+          class="text-sm text-transparent-white font-normal leading-[2] tracking-widest"
+        >
           Take an SUV for its spacious interior, power, and versatility. Perfect
           for your next family vacation and off-road adventures.
         </p>
-        <button type="button" class="second button-hoverable">
+        <button
+          type="button"
+          class="px-6 py-3 my-4 xl:mt-20 rounded-full hover:outline hover:outline-2 hover:outline-very-light-gray hover:[background:_none] hover:text-very-light-gray bg-very-light-gray text-dark-cyan"
+        >
           <span> Learn More</span>
         </button>
       </section>
 
-      <section>
+      <section class="p-10 xl:p-12 bg-very-dark-cyan">
         <svg width="64" height="40" xmlns="http://www.w3.org/2000/svg">
           <g fill="none" fill-rule="evenodd">
             <circle fill="#000" opacity=".201" cx="20" cy="20" r="20" />
@@ -89,18 +103,27 @@
             />
           </g>
         </svg>
-        <h2>Luxury</h2>
-        <p>
+        <h2
+          class="my-4 text-very-light-gray font-bold text-[2.5rem] font-big-shoulder"
+        >
+          LUXURY
+        </h2>
+        <p
+          class="text-sm text-transparent-white font-normal leading-[2] tracking-widest"
+        >
           Cruise in the best car brands without the bloated prices. Enjoy the
           enhanced comfort of a luxury rental and arrive in style.
         </p>
-        <button type="button" class="third button-hoverable">
+        <button
+          type="button"
+          class="px-6 py-3 my-4 xl:mt-20 rounded-full hover:outline hover:outline-2 hover:outline-very-light-gray hover:[background:_none] hover:text-very-light-gray bg-very-light-gray text-very-dark-cyan"
+        >
           <span> Learn More</span>
         </button>
       </section>
     </main>
 
-    <footer>
+    <footer class="hidden">
       <div class="attribution">
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
